@@ -6,3 +6,5 @@ reviews = pd.read_csv("..\data\winemag-data-130k-v2.csv")
 
 reviews.loc[:,['country', 'count','points']]
 reviews.round({'points': 1})
+
+reviews.to_csv("wine-mag.csv")
